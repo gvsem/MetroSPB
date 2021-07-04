@@ -1,0 +1,300 @@
+[
+  [
+    {
+      "name": "Девяткино",
+      "interchange": []
+    },
+    {
+      "name": "Гражданский проспект",
+      "interchange": []
+    },
+    {
+      "name": "Академическая",
+      "interchange": []
+    },
+    {
+      "name": "Политехническая",
+      "interchange": []
+    },
+    {
+      "name": "Площадь Мужества",
+      "interchange": []
+    },
+    {
+      "name": "Лесная",
+      "interchange": []
+    },
+    {
+      "name": "Выборгская",
+      "interchange": []
+    },
+    {
+      "name": "Площадь Ленина",
+      "interchange": []
+    },
+    {
+      "name": "Чернышевская",
+      "interchange": []
+    },
+    {
+      "name": "Площадь Восстания",
+      "interchange": [3]
+    },
+    {
+      "name": "Владимирская",
+      "interchange": [4]
+    },
+    {
+      "name": "Пушкинская",
+      "interchange": [5]
+    },
+    {
+      "name": "Технологический институт",
+      "interchange": [2]
+    },
+    {
+      "name": "Балтийская",
+      "interchange": []
+    },
+    {
+      "name": "Нарвская",
+      "interchange": []
+    },
+    {
+      "name": "Кировский завод",
+      "interchange": []
+    },
+    {
+      "name": "Автово",
+      "interchange": []
+    },
+    {
+      "name": "Ленинский проспект",
+      "interchange": []
+    },
+    {
+      "name": "Проспект Ветеранов",
+      "interchange": []
+    }
+  ],
+  [
+    {
+      "name": "Парнас",
+      "interchange": []
+    },
+    {
+      "name": "Проспект Просвещения",
+      "interchange": []
+    },
+    {
+      "name": "Озерки",
+      "interchange": []
+    },
+    {
+      "name": "Удельная",
+      "interchange": []
+    },
+    {
+      "name": "Пионерская",
+      "interchange": []
+    },
+    {
+      "name": "Черная речка",
+      "interchange": []
+    },
+    {
+      "name": "Петроградская",
+      "interchange": []
+    },
+    {
+      "name": "Горьковская",
+      "interchange": []
+    },
+    {
+      "name": "Невский проспект",
+      "interchange": [3]
+    },
+    {
+      "name": "Сенная площадь",
+      "interchange": [4, 5]
+    },
+    {
+      "name": "Технологический институт",
+      "interchange": [1]
+    },
+    {
+      "name": "Фрунзенская",
+      "interchange": []
+    },
+    {
+      "name": "Московские ворота",
+      "interchange": []
+    },
+    {
+      "name": "Электросила",
+      "interchange": []
+    },
+    {
+      "name": "Парк Победы",
+      "interchange": []
+    },
+    {
+      "name": "Московская",
+      "interchange": []
+    },
+    {
+      "name": "Звездная",
+      "interchange": []
+    },
+    {
+      "name": "Купчино",
+      "interchange": []
+    }
+  ],
+  [
+    {
+      "name": "Беговая",
+      "interchange": []
+    },
+    {
+      "name": "Зенит",
+      "interchange": []
+    },
+    {
+      "name": "Приморская",
+      "interchange": []
+    },
+    {
+      "name": "Василеостровская",
+      "interchange": []
+    },
+    {
+      "name": "Гостиный двор",
+      "interchange": [2]
+    },
+    {
+      "name": "Маяковская",
+      "interchange": [1]
+    },
+    {
+      "name": "Площадь Александра Невского",
+      "interchange": [4]
+    },
+    {
+      "name": "Елизаровская",
+      "interchange": []
+    },
+    {
+      "name": "Ломоносовская",
+      "interchange": []
+    },
+    {
+      "name": "Пролетарская",
+      "interchange": []
+    },
+    {
+      "name": "Обухово",
+      "interchange": []
+    },
+    {
+      "name": "Рыбацкое",
+      "interchange": []
+    }
+  ],
+  [
+    {
+      "name": "Спасская",
+      "interchange": [2, 5]
+    },
+    {
+      "name": "Достоевская",
+      "interchange": [1]
+    },
+    {
+      "name": "Лиговский проспект",
+      "interchange": []
+    },
+    {
+      "name": "Площадь Александра Невского",
+      "interchange": [3]
+    },
+    {
+      "name": "Новочеркасская",
+      "interchange": []
+    },
+    {
+      "name": "Ладожская",
+      "interchange": []
+    },
+    {
+      "name": "Проспект Большевиков",
+      "interchange": []
+    },
+    {
+      "name": "Улица Дыбенко",
+      "interchange": []
+    }
+  ],
+  [
+    {
+      "name": "Комендантский проспект",
+      "interchange": []
+    },
+    {
+      "name": "Старая Деревня",
+      "interchange": []
+    },
+    {
+      "name": "Крестовский остров",
+      "interchange": []
+    },
+    {
+      "name": "Чкаловская",
+      "interchange": []
+    },
+    {
+      "name": "Спортивная",
+      "interchange": []
+    },
+    {
+      "name": "Адмиралтейская",
+      "interchange": []
+    },
+    {
+      "name": "Садовая",
+      "interchange": [2,4]
+    },
+    {
+      "name": "Звенигородская",
+      "interchange": [1]
+    },
+    {
+      "name": "Обводный канал",
+      "interchange": []
+    },
+    {
+      "name": "Волковская",
+      "interchange": []
+    },
+    {
+      "name": "Бухарестская",
+      "interchange": []
+    },
+    {
+      "name": "Международная",
+      "interchange": []
+    },
+    {
+      "name": "Проспект Славы",
+      "interchange": []
+    },
+    {
+      "name": "Дунайская",
+      "interchange": []
+    },
+    {
+      "name": "Шушары",
+      "interchange": []
+    }
+  ]
+]
