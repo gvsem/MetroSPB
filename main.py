@@ -72,6 +72,7 @@ with open("data.json", "r", encoding='utf-8') as file:
         i.save("out/views/line" + str(line_i) + ".png")
 
 
+listDirections = ""
 
 with open("data.json", "r", encoding='utf-8') as file:
     data = json.load(file)
@@ -86,6 +87,15 @@ with open("data.json", "r", encoding='utf-8') as file:
         renderDirectionTable(s, stationToEnglish(s), lineColors[line_i - 1]).save("out/directions/line" + str(line_i) + "south.png")
         renderDirectionSplitTable(s, stationToEnglish(s), line_i, True).save("out/directions/line" + str(line_i) + "southRight.png")
         renderDirectionSplitTable(s, stationToEnglish(s), line_i, False).save("out/directions/line" + str(line_i) + "southLeft.png")
+
+        listDirections += '<img src="out/directions/line' + str(line_i) + 'north.png" width="240">'
+        listDirections += '<img src="out/directions/line' + str(line_i) + 'northRight.png" width="240">'
+        listDirections += '<img src="out/directions/line' + str(line_i) + 'northLeft.png" width="240">'
+        listDirections += '<img src="out/directions/line' + str(line_i) + 'south.png" width="240">'
+        listDirections += '<img src="out/directions/line' + str(line_i) + 'southRight.png" width="240">'
+        listDirections += '<img src="out/directions/line' + str(line_i) + 'southLeft.png" width="240">'
+
+print(listDirections)
 
 
 # s = "Площадь Восстания"
