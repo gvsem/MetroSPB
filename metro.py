@@ -29,9 +29,9 @@ def renderLineLogo(number, withWhiteBorder=False):
     i = Image.new('RGB', (180, 120))
     i.paste(lineColors[number - 1], [0,0,i.size[0],i.size[1]])
     draw = ImageDraw.Draw(i)
-    fontLine = ImageFont.truetype("Arial_Greek_Bold.ttf", 98)
+    fontLine = ImageFont.truetype("assets/Arial_Greek_Bold.ttf", 98)
     draw.text((115, 7), str(number), (255, 255, 255), font=fontLine)
-    metroLogo = Image.open("logo_white.png").resize((90, 70))
+    metroLogo = Image.open("assets/logo_white.png").resize((90, 70))
     i.paste(metroLogo, (18,26), metroLogo)
     if withWhiteBorder:
         i = ImageOps.expand(i,border=5,fill='white')
@@ -52,8 +52,8 @@ def renderStationTable(lines, title, subtitle):
     lessFont = 1.0
     while offset < 20:
 
-        fontH1 = ImageFont.truetype("FreeSet Bold.ttf", int(65 * lessFont))
-        fontH2 = ImageFont.truetype("FreeSet Bold.ttf", int(60 * lessFont))
+        fontH1 = ImageFont.truetype("assets/FreeSet Bold.ttf", int(65 * lessFont))
+        fontH2 = ImageFont.truetype("assets/FreeSet Bold.ttf", int(60 * lessFont))
 
         titleWidth = fontH1.getsize(title)[0]
         subtitleWidth = fontH2.getsize(subtitle)[0]
@@ -71,7 +71,7 @@ def renderStationTable(lines, title, subtitle):
 
     i = Image.new('RGB', (n, m))
     i.paste(backgroundColor, [0,0,i.size[0],i.size[1]])
-    metroLogo = Image.open("logo_dark.png").resize(metroLogoSize)
+    metroLogo = Image.open("assets/logo_dark.png").resize(metroLogoSize)
     i.paste(metroLogo, (offset, metroLogoOffsetH), metroLogo)
     draw = ImageDraw.Draw(i)
 
@@ -108,8 +108,8 @@ def renderDirectionTable(title, subtitle, color):
 
         # fontH1 = ImageFont.truetype("FRS65.ttf", int(65 * lessFont))
         # fontH2 = ImageFont.truetype("FRS65.ttf", int(60 * lessFont))
-        fontH1 = ImageFont.truetype("FreeSet Bold.ttf", int(65 * lessFont))
-        fontH2 = ImageFont.truetype("FreeSet Bold.ttf", int(60 * lessFont))
+        fontH1 = ImageFont.truetype("assets/FreeSet Bold.ttf", int(65 * lessFont))
+        fontH2 = ImageFont.truetype("assets/FreeSet Bold.ttf", int(60 * lessFont))
         # fontH1 = ImageFont.truetype("BarnaulGroteskExtraBold-Reg.ttf", int(65 * lessFont))
         # fontH2 = ImageFont.truetype("BarnaulGroteskExtraBold-Reg.ttf", int(60 * lessFont))
         # fontH1 = ImageFont.truetype("HelveticaNeueLTW1GBdCn.otf", int(65 * lessFont))
@@ -128,7 +128,7 @@ def renderDirectionTable(title, subtitle, color):
 
     i = Image.new('RGBA', (n, m))
     i.paste(backgroundColor, [0,0,i.size[0],i.size[1]])
-    metroLogo = Image.open("arrow_white.png").resize(metroLogoSize)
+    metroLogo = Image.open("assets/arrow_white.png").resize(metroLogoSize)
     i.paste(metroLogo, (offset, metroLogoOffsetH), metroLogo)
     draw = ImageDraw.Draw(i)
 
@@ -147,8 +147,8 @@ def renderStationTableFromJson(station, line_i):
 
 def renderWayOut(n, m):
 
-    fontH1 = ImageFont.truetype("FreeSet Bold.ttf", int(65))
-    fontH2 = ImageFont.truetype("FreeSet Bold.ttf", int(60))
+    fontH1 = ImageFont.truetype("assets/FreeSet Bold.ttf", int(65))
+    fontH2 = ImageFont.truetype("assets/FreeSet Bold.ttf", int(60))
 
     title = "Выход"
     subtitle = "Way out"
@@ -173,7 +173,7 @@ def renderWayOut(n, m):
     draw.text((offset + textOffset, 93), subtitle, white, font=fontH2)
     offset += textWidth + zoneOffset
 
-    wayOutLogo = Image.open("wayout.png").resize(wayOutLogoSize)
+    wayOutLogo = Image.open("assets/wayout.png").resize(wayOutLogoSize)
     i.paste(wayOutLogo, (offset, wayOutLogoOffsetH), wayOutLogo)
     offset += wayOutLogoSize[0] + zoneOffset
 
@@ -197,8 +197,8 @@ def renderDirectionSplitTable(title, subtitle, line, outIsRight=True):
 
         # fontH1 = ImageFont.truetype("FRS65.ttf", int(65 * lessFont))
         # fontH2 = ImageFont.truetype("FRS65.ttf", int(60 * lessFont))
-        fontH1 = ImageFont.truetype("FreeSet Bold.ttf", int(65 * lessFont))
-        fontH2 = ImageFont.truetype("FreeSet Bold.ttf", int(60 * lessFont))
+        fontH1 = ImageFont.truetype("assets/FreeSet Bold.ttf", int(65 * lessFont))
+        fontH2 = ImageFont.truetype("assets/FreeSet Bold.ttf", int(60 * lessFont))
         # fontH1 = ImageFont.truetype("BarnaulGroteskExtraBold-Reg.ttf", int(65 * lessFont))
         # fontH2 = ImageFont.truetype("BarnaulGroteskExtraBold-Reg.ttf", int(60 * lessFont))
         # fontH1 = ImageFont.truetype("HelveticaNeueLTW1GBdCn.otf", int(65 * lessFont))
@@ -225,7 +225,7 @@ def renderDirectionSplitTable(title, subtitle, line, outIsRight=True):
 
     if outIsRight:
 
-        metroLogo = Image.open("arrow_white.png").resize(metroLogoSize).rotate(90)
+        metroLogo = Image.open("assets/arrow_white.png").resize(metroLogoSize).rotate(90)
         i.paste(metroLogo, (offset, metroLogoOffsetH), metroLogo)
 
         offset += metroLogoSize[0] + zoneOffset
@@ -248,7 +248,7 @@ def renderDirectionSplitTable(title, subtitle, line, outIsRight=True):
 
         offset = n - offset - metroLogoSize[0]
 
-        metroLogo = Image.open("arrow_white.png").resize(metroLogoSize).rotate(270)
+        metroLogo = Image.open("assets/arrow_white.png").resize(metroLogoSize).rotate(270)
         i.paste(metroLogo, (offset, metroLogoOffsetH), metroLogo)
         draw = ImageDraw.Draw(i)
 
