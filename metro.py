@@ -142,7 +142,7 @@ def renderDirectionTable(title, subtitle, color):
 def renderStationTableFromJson(station, line_i):
     s = station["name"]
     i = [line_i] + station["interchange"]
-    return renderStationTable(i, s, translit(s, "ru", reversed=True))
+    return renderStationTable(i, s, stationToEnglish(s))
 
 
 def renderWayOut(n, m):
